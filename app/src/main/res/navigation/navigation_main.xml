@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/navigation_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/formInputFragment">
+
+    <fragment
+        android:id="@+id/formInputFragment"
+        android:name="com.fakher.fizzbuzz.ui.inputform.FormInputFragment"
+        android:label="QuoteListFragment"
+        tools:layout="@layout/fragment_form_input">
+
+        <action
+            android:id="@+id/action_formInputFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.fakher.fizzbuzz.ui.statistics.StatsFragment"
+        android:label="StatsFragment" />
+
+</navigation>

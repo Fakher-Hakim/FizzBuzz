@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FizzBuzz</string>
+    <string name="first_number">First Number</string>
+    <string name="second_number">Second Number</string>
+    <string name="first_word">First Word</string>
+    <string name="second_word">Second word</string>
+    <string name="limit">Limit number</string>
+    <string name="submit">Submit</string>
+    <string name="hint_int_000">000</string>
+    <string name="hint_fizz">Fizz</string>
+    <string name="hint_buzz">Buzz</string>
+    <string name="hint_int_100">100</string>
+    <string name="result">Result</string>
+    <string name="check_stats">Check stats</string>
+</resources>

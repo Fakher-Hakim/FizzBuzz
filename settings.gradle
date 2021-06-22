@@ -1,0 +1,6 @@
+include ':common'
+include ':presentation'
+include ':business'
+include ':repository'
+include ':app'
+rootProject.name = "FizzBuzz"

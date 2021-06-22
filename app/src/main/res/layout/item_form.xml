@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="form"
+            type="com.fakher.presentation.model.Form" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/InputFormLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/first_number" />
+
+            <TextView
+                android:id="@+id/first_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{form.firstInt}"
+                android:textSize="18sp"
+                tools:text="23" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/InputFormLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/second_number" />
+
+            <TextView
+                android:id="@+id/second_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{form.secondInt}"
+                android:textSize="18sp"
+                tools:text="23" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/InputFormLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/first_word" />
+
+            <TextView
+                android:id="@+id/first_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{form.firstWord}"
+                android:textSize="18sp"
+                tools:text="buzz" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/InputFormLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/second_word" />
+
+            <TextView
+                android:id="@+id/second_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{form.secondWord}"
+                android:textSize="18sp"
+                tools:text="fizz" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/InputFormLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/hits" />
+
+            <TextView
+                android:id="@+id/hits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{form.hits}"
+                android:textColor="@color/red_error"
+                android:textSize="18sp"
+                tools:text="12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
